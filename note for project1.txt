@@ -1,0 +1,166 @@
+★articles
+=authors.id
+ author |               title                |           slug            |                                                lead                                                 |                                                                                                                                body                                                                                                                                 |             time              | *id
+--------+------------------------------------+---------------------------+-----------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+----
+      3 | Bad things gone, say good people   | bad-things-gone           | All bad things have gone away, according to a poll of good people Thursday.                         | Bad things are a thing of the bad, bad past. Or so say good people, who were asked by pollsters Thursday whether bad things still are.                                                                                                                              | 2016-08-15 18:55:10.814316+00 | 23
+      4 | Balloon goons doomed               | balloon-goons-doomed      | The doom of balloon goons is true news.                                                             | The goons are doomed, no matter how much their balloons balloon.                                                                                                                                                                                                    | 2016-08-15 18:55:10.814316+00 | 24
+      1 | Bears love berries, alleges bear   | bears-love-berries        | Rumors that bears love berries were confirmed by bear, who also proclaims love of salmon and honey. | Bear specified that raspberries were a personal favorite, although wild blackberries remain more abundant throughout the summer and early fall.                                                                                                                     | 2016-08-15 18:55:10.814316+00 | 25
+      2 | Candidate is jerk, alleges rival   | candidate-is-jerk         | That political candidate is a real jerk, according to a rival.                                      | The rival alleged egotism, arrogance, and an almost fanatical devotion to media grandstanding. The candidate's campaign denied everything, and retaliated that the rival is a doo-doo head.                                                                         | 2016-08-15 18:55:10.814316+00 | 26
+      1 | Goats eat Google's lawn            | goats-eat-googles         | A herd of goats are eating Google's lawn.                                                           | And the Googlers think it's super cute.                                                                                                                                                                                                                             | 2016-08-15 18:55:10.814316+00 | 27
+      1 | Media obsessed with bears          | media-obsessed-with-bears | Media sources claim media figures fixated on bears and bear-related products.                       | Traditional media prefer green bears while online reporters love polar bears.
+(8 rows)
+
+★authors
+          name          |                                                bio                                                 | *id
+------------------------+----------------------------------------------------------------------------------------------------+----
+ Ursula La Multa        | Ursula La Multa is an expert on bears, bear abundance, and bear accessories.                       |  1
+ Rudolf von Treppenwitz | Rudolf von Treppenwitz is a nonprofitable disorganizer specializing in procrastinatory operations. |  2
+ Anonymous Contributor  | Anonymous Contributor's parents had unusual taste in names.                                        |  3
+ Markoff Chaney         | Markoff Chaney is the product of random genetics.                                                  |  4
+(4 rows)
+
+
+★log
+path와 slug를 대조해서 어떤 article을 많이 조회했는지!
+                path                 |       ip       | method |    status     |          time          |   *id
+-------------------------------------+----------------+--------+---------------+------------------------+---------
+ /                                   | 198.51.100.195 | GET    | 200 OK        | 2016-07-01 07:00:00+00 | 1678923
+ /article/candidate-is-jerk          | 198.51.100.195 | GET    | 200 OK        | 2016-07-01 07:00:47+00 | 1678924
+ /article/goats-eat-googles          | 198.51.100.195 | GET    | 200 OK        | 2016-07-01 07:00:34+00 | 1678925
+ /article/goats-eat-googles          | 198.51.100.195 | GET    | 200 OK        | 2016-07-01 07:00:52+00 | 1678926
+ /article/balloon-goons-doomed       | 198.51.100.195 | GET    | 200 OK        | 2016-07-01 07:00:23+00 | 1678927
+ /                                   | 192.0.2.194    | GET    | 200 OK        | 2016-07-01 07:00:05+00 | 1678928
+ /article/candidate-is-jerk          | 192.0.2.194    | GET    | 200 OK        | 2016-07-01 07:00:54+00 | 1678929
+ /                                   | 192.0.2.80     | GET    | 200 OK        | 2016-07-01 07:00:15+00 | 1678930
+ /article/bears-love-berries         | 192.0.2.80     | GET    | 200 OK        | 2016-07-01 07:01:13+00 | 1678931
+ /                                   | 198.51.100.144 | GET    | 200 OK        | 2016-07-01 07:00:21+00 | 1678932
+ /article/trouble-for-troubled       | 198.51.100.144 | GET    | 200 OK        | 2016-07-01 07:00:56+00 | 1678933
+ /                                   | 203.0.113.234  | GET    | 200 OK        | 2016-07-01 07:00:31+00 | 1678934
+ /article/candidate-is-jerk          | 203.0.113.234  | GET    | 200 OK        | 2016-07-01 07:01:14+00 | 1678935
+ /article/bad-things-gone            | 203.0.113.234  | GET    | 200 OK        | 2016-07-01 07:01:02+00 | 1678936
+ /                                   | 203.0.113.235  | GET    | 200 OK        | 2016-07-01 07:00:32+00 | 1678937
+ /article/bears-love-berries         | 203.0.113.235  | GET    | 200 OK        | 2016-07-01 07:01:12+00 | 1678938
+ /                                   | 203.0.113.127  | GET    | 200 OK        | 2016-07-01 07:00:33+00 | 1678939
+ /article/balloon-goons-doomed       | 203.0.113.127  | GET    | 200 OK        | 2016-07-01 07:01:08+00 | 1678940
+ /article/bears-love-berries         | 203.0.113.127  | GET    | 200 OK        | 2016-07-01 07:01:00+00 | 1678941
+ /article/candidate-is-jerk          | 203.0.113.127  | GET    | 200 OK        | 2016-07-01 07:01:03+00 | 1678942
+ /                                   | 203.0.113.115  | GET    | 200 OK        | 2016-07-01 07:00:36+00 | 1678943
+ /article/bears-love-berries         | 203.0.113.115  | GET    | 200 OK        | 2016-07-01 07:01:23+00 | 1678944
+ /                                   | 192.0.2.78     | GET    | 200 OK        | 2016-07-01 07:00:44+00 | 1678945
+ /article/bears-love-berries         | 192.0.2.78     | GET    | 200 OK        | 2016-07-01 07:01:34+00 | 1678946
+ /article/trouble-for-troubled       | 192.0.2.78     | GET    | 200 OK        | 2016-07-01 07:01:12+00 | 1678947
+ /article/bears-love-berries         | 192.0.2.78     | GET    | 200 OK        | 2016-07-01 07:01:34+00 | 1678948
+ /                                   | 198.51.100.114 | GET    | 200 OK
+(1677735 rows)
+
+
+★view
+##1. select log.path, count(*) as num from log group by path order by log.path;
+2. create view path_to_slug as select path from log;
+3. update path_to_slug set path = replace(path,'/article/','');
+##4. select path, count(*) as num from path_to_slug group by path order by path;
+            path            |  num
+----------------------------+--------
+ /                          | 479121
+ /%20%20%20                 |    290
+ /+++ATH0                   |    288
+ bad-things-gone            | 170098
+ bad-things-gonea           |     66
+ bad-things-goneb           |     69
+ bad-things-gonec           |     67
+ bad-things-goned           |     52
+ bad-things-gonee           |     72
+ bad-things-gonef           |     68
+ bad-things-goneg           |     60
+ bad-things-goneh           |     72
+ bad-things-gonei           |     60
+ bad-things-gonej           |     64
+ bad-things-gonek           |     88
+
+
+## 5. select articles.title, articles.slug, count(path_to_slug.path) as num from articles left join path_to_slug on articles.slug = path_to_slug.path group by articles.title, articles.slug;
+
+               title                |           slug            |  num  
+------------------------------------+---------------------------+--------
+ Bears love berries, alleges bear   | bears-love-berries        | 253801
+ Bad things gone, say good people   | bad-things-gone           | 170098
+ Trouble for troubled troublemakers | trouble-for-troubled      |  84810
+ Goats eat Google's lawn            | goats-eat-googles         |  84906
+ Balloon goons doomed               | balloon-goons-doomed      |  84557
+ Media obsessed with bears          | media-obsessed-with-bears |  84383
+ Candidate is jerk, alleges rival   | candidate-is-jerk         | 338647
+ There are a lot of bears           | so-many-bears             |  84504
+(8 rows)
+
+6. create view articles_views as select articles.author, articles.title, count(path_to_slug.path) as num from articles left join path_to_slug on articles.slug = path_to_slug.path group by articles.title, articles.slug, articles.author order by num;
+
+ author |               title                |  num
+--------+------------------------------------+--------
+      1 | Media obsessed with bears          |  84383
+      1 | There are a lot of bears           |  84504
+      4 | Balloon goons doomed               |  84557
+      2 | Trouble for troubled troublemakers |  84810
+      1 | Goats eat Google's lawn            |  84906
+      3 | Bad things gone, say good people   | 170098
+      1 | Bears love berries, alleges bear   | 253801
+      2 | Candidate is jerk, alleges rival   | 338647
+
+7. query1 = "select title, num from articles_views order by num limit 3;"
+
+8. select status, count(*) as num from log group by status;
+    status     |   num
+---------------+---------
+ 404 NOT FOUND |   12908
+ 200 OK        | 1664827
+(2 rows)
+
+9. create view log_date as select date(time) as date, status, count(*) as num from log group by date(time), status order by date(time), status;
+
+    date    |    status     |  num
+------------+---------------+-------
+ 2016-07-01 | 200 OK        | 38431
+ 2016-07-01 | 404 NOT FOUND |   274
+ 2016-07-02 | 200 OK        | 54811
+ 2016-07-02 | 404 NOT FOUND |   389
+ 2016-07-03 | 200 OK        | 54465
+ 2016-07-03 | 404 NOT FOUND |   401
+ 2016-07-04 | 200 OK        | 54523
+ 2016-07-04 | 404 NOT FOUND |   380
+
+10. select date, sum(case when status = '200 OK' then num else 0 end) as "ok", sum(case when status = '404 NOT FOUND' then num else 0 end) as "error" from log_date group by date;
+    date    |  ok   | error
+------------+-------+-------
+ 2016-07-01 | 38431 |   274
+ 2016-07-02 | 54811 |   389
+ 2016-07-03 | 54465 |   401
+ 2016-07-04 | 54523 |   380
+ 2016-07-05 | 54162 |   423
+ 2016-07-06 | 54354 |   420
+ 2016-07-07 | 54380 |   360
+ 2016-07-08 | 54666 |   418
+ 2016-07-09 | 54826 |   410
+ 2016-07-10 | 54118 |   371
+ 2016-07-11 | 54094 |   403
+ 2016-07-12 | 54466 |   373
+ 2016-07-13 | 54797 |   383
+ 2016-07-14 | 54813 |   383
+ 2016-07-15 | 54554 |   408
+ 2016-07-16 | 54124 |   374
+ 2016-07-17 | 54642 |  1265
+ 2016-07-18 | 55215 |   374
+ 2016-07-19 | 54908 |   433
+ 2016-07-20 | 54174 |   383
+ 2016-07-21 | 54823 |   418
+ 2016-07-22 | 54800 |   406
+ 2016-07-23 | 54521 |   373
+ 2016-07-24 | 54669 |   431
+ 2016-07-25 | 54222 |   391
+ 2016-07-26 | 53982 |   396
+ 2016-07-27 | 54122 |   367
+ 2016-07-28 | 54404 |   393
+ 2016-07-29 | 54569 |   382
+ 2016-07-30 | 54676 |   397
+ 2016-07-31 | 45516 |   329
+(31 rows)
+
+
