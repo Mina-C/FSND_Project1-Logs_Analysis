@@ -1,13 +1,13 @@
-vagrant@vagrant:/vagrant$ python report.py
+vagrant@vagrant:/vagrant/nd_project1$ python report.py
 Report:
 1. The Most Popular Articles TOP 3
-  -  Candidate is jerk, alleges rival  :  338647 views
-  -  Bears love berries, alleges bear  :  253801 views
-  -  Bad things gone, say good people  :  170098 views
+  - Candidate is jerk, alleges rival : 338647 views
+  - Bears love berries, alleges bear : 253801 views
+  - Bad things gone, say good people : 170098 views
 2. The Most Popular Authors
-  -  Ursula La Multa  :  507594 views
-  -  Rudolf von Treppenwitz  :  423457 views
-  -  Anonymous Contributor  :  170098 views
-  -  Markoff Chaney  :  84557 views
+  - Ursula La Multa : 507594 views
+  - Rudolf von Treppenwitz : 423457 views
+  - Anonymous Contributor : 170098 views
+  - Markoff Chaney : 84557 views
 3. The date with errors more than 1%
-  -  July 17, 2016  : 2.3% errors
+  - July 17, 2016 : 2.3% errors
