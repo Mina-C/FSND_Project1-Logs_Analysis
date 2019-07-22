@@ -10,7 +10,8 @@ This project sets up a mock PostgreSQL database for a fictional news website. Th
 You need PostgreSQL, Python(ver 3.7) program and Linux-based virtual machine environment(Vagrant and VirtualBox).
     1. To make the virtual machine(VM) online, use the commands "vagrant up". Then log on it with "vagrant ssh".
     2. Please download "newsdata.sql", "report.py" "Vagrantfile". Then put this file into a shared directory.
-    (How to make shared directory? - https://www.howtogeek.com/189974/how-to-share-your-computers-files-with-a-virtual-machine/)
+    	Download "newsdata.sql" here - https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+    	How to make shared directory? - https://www.howtogeek.com/189974/how-to-share-your-computers-files-with-a-virtual-machine/
     3. To load the data, "cd" into the shared directory and use the command "psql -d news -f newsdata.sql".
     4. To create views for this program, please run "psql -d news -f create_views.sql" to import the views from the "news" database.
     5. Please run the code with "python report.py".
